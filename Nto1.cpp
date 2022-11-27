@@ -16,7 +16,7 @@ void print(int n)
 }
 int main()
 {
-    //programming_lord
+    
     int tc;
     cout << "Insert the value:";
     cin >> tc;
