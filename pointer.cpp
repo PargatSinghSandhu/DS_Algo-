@@ -8,6 +8,6 @@ int main()
     p=&a;
     
     cout<<"Value of a: "<<a<<endl;
-    cout<<"Value of pointer: "<<*p;
+    cout<<"Value of pointer: "<<*p<<" "<<p<<" "<<a<<" "<<&a;
     return 0;
 }
