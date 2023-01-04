@@ -6,10 +6,24 @@ struct Node
 {
     int data;
     struct Node*next;                                                               // Self-initialization strcuture 
-}*first;                                                                            //Pointer for impmenting a Linked List
+}*first=NULL;                                                                            //Pointer for impmenting a Linked List
+
+void create(int arr[], int n)
+{
+    int i;
+    struct Node *t, *last;                                                          //*t = this will help in creating new node *last = this will help in adding new node
+    first= new Node;
+    first->data=arr[0];
+    first->next=NULL;
+    last=first;
+    
+    
+}
 
 
 int main()
 {
+    int arr[]={4,2,6,9,3};
     
+    return 0;
 }
