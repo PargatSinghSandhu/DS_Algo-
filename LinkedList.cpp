@@ -29,12 +29,24 @@ void create(int arr[], int n)
     
 }
 
+void display( struct Node *p)
+{
+    while (p!=NULL)
+    {
+        cout<<p->data;
+        p=p->next;
+        
+    }
+}
+
 
 int main()
 {
     int arr[]={4,2,6,9,3};
     
     create(arr,5);
+    
+    display(first);
     
     
     return 0;
