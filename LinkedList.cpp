@@ -17,6 +17,15 @@ void create(int arr[], int n)
     first->next=NULL;
     last=first;
     
+    for(i=1;i<n;i++)
+    {
+        t = new Node;
+        t->data=arr[i];
+        t->next=NULL;
+        last->next=t;
+        last=t;
+        
+    }
     
 }
 
