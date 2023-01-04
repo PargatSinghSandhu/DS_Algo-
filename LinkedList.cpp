@@ -34,5 +34,8 @@ int main()
 {
     int arr[]={4,2,6,9,3};
     
+    create(arr,5);
+    
+    
     return 0;
 }
