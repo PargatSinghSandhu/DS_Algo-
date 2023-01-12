@@ -9,7 +9,7 @@
           int temp=arr1[i]+arr2[i];
           if (temp>=0 && temp<=9)
           {
-              arr3[i]=temp+ones;
+              arr3[i]= temp+ones;
           }
           else
           {
