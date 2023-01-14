@@ -3,7 +3,7 @@
     
     void sum(int arr1[],int arr2[],int n)
     {
-      int sum=0,arr3[10]={}, ones=0;
+      int sum=0,arr3[10]={},  ones=0;
       for (int i=0;i<n;i++)
       {
           int temp=arr1[i]+arr2[i];
