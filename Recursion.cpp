@@ -5,7 +5,7 @@ void fun1(int n)
 {
     if(n>0)
     {
-        cout<<"Using Recursion"<<endl;
+        cout<<n<<endl;
         fun1(n-1);
         
     }
