@@ -1,8 +1,5 @@
 #include<iostream>
-
 using namespace std;
-
-
 void Print(int n)
 {
     if(n==1)
@@ -17,14 +14,10 @@ void Print(int n)
     
 }
 
-
-
-
 int main()
 {
     int c;
     cout<<"Enter the value of n";
-    cin>>c;
-    
+    cin>>c;  
     Print(c);
 }
