@@ -5,7 +5,16 @@ using namespace std;
 
 void push(vector <int> &v, int temp)
 {
-    
+    if(v.size()==0 ||v[v.size()-1]<=temp)
+       {
+           v.push_back(temp);
+           return;
+       }
+       int val=v[v.size()-1];
+       v.push_back(val);
+       push(v,temp);
+       v.pop_back(val);
+       return;
 }
 
 void sort(vector <int>&v)
@@ -16,7 +25,7 @@ void sort(vector <int>&v)
     }
     
     int temp=v[v.size()==1];
-    v.push_back();
+    v.push_back(temp);
     sort(v);
     push(v, temp);
     return;
