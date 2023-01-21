@@ -2,6 +2,7 @@
 #include<vector>
 
 using namespace std;
+#define ll long long unsigned int
 
 void push(vector <int> &v, int temp)
 {
@@ -11,9 +12,9 @@ void push(vector <int> &v, int temp)
            return;
        }
        int val=v[v.size()-1];
-       v.push_back(val);
+       v.pop_back();
        push(v,temp);
-       v.pop_back(val);
+       v.push_back(val);
        return;
 }
 
@@ -24,10 +25,10 @@ void sort(vector <int>&v)
         return;
     }
     
-    int temp=v[v.size()==1];
-    v.push_back(temp);
+    int temp=v[v.size()-1];
+    v.pop_back();
     sort(v);
-    push(v, temp);
+    push(v,temp);
     return;
 }
 
@@ -47,10 +48,15 @@ int main()
         v.push_back(item);
         
     }
-    
+    v={2,1,0,5,7};
     sort(v);
     
-    
+    for(int j=0;j<array_size;j++)
+    {
+        cout<<v[j]<<" ";
+        
+    }
+    cout<<endl;
     
     return 0;
     
