@@ -3,7 +3,24 @@
 
 using namespace std;
 
+void push(vector <int> &v, int temp)
+{
+    
+}
 
+void sort(vector <int>&v)
+{
+    if(v.size()==1)
+    {
+        return;
+    }
+    
+    int temp=v[v.size()==1];
+    v.push_back();
+    sort(v);
+    push(v, temp);
+    return;
+}
 
 
 
