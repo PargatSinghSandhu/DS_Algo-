@@ -6,7 +6,7 @@ using namespace std;
 
 void push(vector <int> &v, int temp)
 {
-    if(v.size()==0 ||v[v.size()-1]<=temp)
+    if(v.size()==0 || v[v.size()-1]<=temp)
        {
            v.push_back(temp);
            return;
