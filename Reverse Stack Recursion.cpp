@@ -1,41 +1,44 @@
-
-
 #include<iostream>
 #include<stack>
 
 using namespace std;
 
-
-void del(stack<int>&s, int k)
+void insert(stack<int> &s, int ele)
 {
-    if(k==1)
-    {
-        s.pop();
-        return;
-    }
-    int temp= s.top();
-    s.pop();
-    del(s,k-1);
-    s.push(temp);
     
-}
-
-stack <int> delmid(stack<int>&s)
-
-{
     if(s.size()==0)
     {
-        return s;
+        s.push(ele);
+        return;
     }
-    int k=((s.size()/2)+1);
-    del(s,k);
     
-    return s;
+    int temp = s.top();
+    s.pop();
+    insert(s,ele);
+    s.push(temp);
+    return;
+    
 }
 
-void print(stack<int>&s)
+
+
+void reverse(stack<int>s)
 {
+    if(s.size()==1)
+    {
+        return;
+    }
+    int temp=s.top();
+    s.pop();
+    reverse(s);
+    insert(s,temp);
+    return;
+
     
+}
+
+void print(stack<int>s)
+{
     if(s.empty())
     {
         return;
@@ -46,24 +49,27 @@ void print(stack<int>&s)
     print(s);
     s.push(x);
 }
-
 int main()
 {
     
-    int arr[] = {1,2,3,4,5}, top = -1;
-    stack<int>s;
     
-    for (int i=0;i<5;i++)
+    int arr[]={1,2,3,4,5}, top=-1;
+    stack<int>s;
+    for(int i=0;i<5;i++)
     {
         top++;
         s.push(arr[i]);
-        
     }
-    delmid(s);
+
+    reverse(s);
     print(s);
     return 0;
-    
+
 }
+
+
+
+
 
 
 
