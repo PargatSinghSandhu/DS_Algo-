@@ -3,19 +3,20 @@
 
 using namespace std;
 
-void insert(stack<int> &s, int item)
+void insert(stack<int> &s, int ele)
 {
-    if (s.size()==0)
+    
+    if(s.size()==0)
     {
-        s.push(item);
+        s.push(ele);
         return;
     }
     
-    insert(s,item);
-    
-    
-    
-    
+    int temp = s.top();
+    s.pop();
+    insert(s,ele);
+    s.push(temp);
+    return;
     
 }
 
@@ -23,22 +24,34 @@ void insert(stack<int> &s, int item)
 
 void reverse(stack<int>s)
 {
-    if(s.size()==0)
-        
+    if(s.size()==1)
     {
         return;
     }
-    
     int temp=s.top();
     s.pop();
     reverse(s);
     insert(s,temp);
     return;
+
+    
 }
 
-
+void print(stack<int>s)
+{
+    if(s.empty())
+    {
+        return;
+    }
+    int x= s.top();
+    s.pop();
+    cout<<x;
+    print(s);
+    s.push(x);
+}
 int main()
 {
+    
     
     int arr[]={1,2,3,4,5}, top=-1;
     stack<int>s;
@@ -49,5 +62,7 @@ int main()
     }
 
     reverse(s);
+    print(s);
+    return 0;
 
 }
