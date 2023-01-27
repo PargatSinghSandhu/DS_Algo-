@@ -7,8 +7,8 @@ int main()
     int arr[5]={1,2,3,4,5};         //array defined in stack 
     int *p, *q;                     //pointers will be used to define and access the array in heap.
     
-    p = new int [5];
-    q=new int [10];
+    p = new int [5];                //array making in heap, through p, we can access the array in heap.
+    q=new int [10];                 //array making in heap, through q, we can access the array in heap.
     for(int j=0;j<5;j++)
     {
         cin>>p[j];
