@@ -10,3 +10,26 @@ for(int i=0;i<length;i++)
 {
     cout<<A[i];
 }
+
+
+
+Add(x)/Append(x)
+
+
+for(int=0;i<length;i++)
+{
+    A[length]=x;
+}
+length++;
+
+Insert in-between
+
+
+Insert(4,12).  // (index,element)
+
+for(int i=length;i>index;i--)
+{
+    A[i]=A[i-1];
+}
+A[index]=x;
+length++;
