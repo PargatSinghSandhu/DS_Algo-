@@ -1,0 +1,12 @@
+ "psuedocode of Array Operations"
+
+Array: Array;
+Total Size:10;
+Length of Array:6;
+
+Display
+
+for(int i=0;i<length;i++)
+{
+    cout<<A[i];
+}
