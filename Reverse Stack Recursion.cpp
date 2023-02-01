@@ -1,7 +1,7 @@
 #include<iostream>
 #include<stack>
 
-using namespace std;
+using namespace std ;
 
 void insert(stack<int> &s, int ele)
 {
