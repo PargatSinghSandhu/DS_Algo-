@@ -12,26 +12,43 @@ int main()
     Node* A;
     A = NULL;
     
-    Node*temp = new Node;
-    Node*temp1= new Node;
+    Node*temp = new Node();
+    //Node*temp1= new Node;
     
     temp->data = 2 ;
     temp->next=NULL;
     A=temp;
-    cout<<temp->data;
+    temp= new Node();
     
-    temp1->data =3;
-    temp1->next=NULL;
-    A=temp1;
+    temp->data =3;
+    temp->next=NULL;
+
+   
     
-    cout<<temp1->data;
+    Node*temp1=A;
     
     
-    
-    
-    while(temp->next!=NULL)
+    while(temp1->next!=NULL)
     {
-        cout<<"1";
+        
+        temp1=temp1->next;
+        
+        
     }
+
+    temp1->next=temp;
+    
+    //cout<<temp->data;
+    
+    while(temp1!=NULL)
+    {
+        
+        cout<<temp1->data;
+        temp1=temp1->next;
+        
+        
+    }
+    //cout<<temp1;
+   
     return 0;
 }
