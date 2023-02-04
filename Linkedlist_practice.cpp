@@ -44,7 +44,7 @@ int main()
     {
         
         cout<<temp1->data;
-        temp1=temp1->next;
+        temp1=temp1-> next;
         
         
     }
