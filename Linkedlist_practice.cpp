@@ -15,7 +15,7 @@ int main()
     Node*temp = new Node();
     //Node*temp1= new Node;
     
-    temp->data = 2 ;
+    temp->data = 2;
     temp->next=NULL;
     A=temp;
     temp= new Node();
