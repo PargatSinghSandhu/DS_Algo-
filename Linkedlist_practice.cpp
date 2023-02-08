@@ -1,11 +1,13 @@
+#include<iostream>
+
 struct Node 
 {
     int data; 
     struct Node*next; 
-}
+};
 
 struct Node*head;
-void Insert()
+void Insert(int x)
 {
     Node*temp = new Node;
     temp->data = x;
