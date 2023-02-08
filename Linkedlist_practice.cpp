@@ -38,7 +38,7 @@ int main()
 
     temp1->next=temp;
     
-    //cout<<temp->data;
+    
     
     while(temp1!=NULL)
     {
