@@ -11,12 +11,20 @@ void Insert(int x)
 {
     Node*temp = new Node;
     temp->data = x;
-    temp->next = NULL;
-    head = temp;
-    if(head!=NULL)
+    temp->next=head;
+    head=temp;
+    
+}
+
+void print()
+{
+    
+    Node*temp=head;
+    
+    while(temp!=NULL)
     {
-        temp->next=head;
-        head=temp;
+        cout<<temp->data;
+        temp=temp->next;
     }
 }
 
@@ -30,6 +38,8 @@ int main ()
    for(int i=0;i<n;i++)
    {
        cin>>x;
+       Insert(x);
    }
-   Insert(x);
+   
+   print();
 }
