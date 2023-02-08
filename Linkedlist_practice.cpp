@@ -13,7 +13,8 @@ void Insert()
     head = temp;
     if(head!=NULL)
     {
-        
+        temp->next=head;
+        head=temp;
     }
 }
 
