@@ -12,6 +12,7 @@ struct Node*head;
 
 void Insert(int x)
 {
+    
     Node*temp1 = new Node;
     temp1->data=x;
     temp1->next=NULL;
@@ -29,9 +30,10 @@ void Insert(int x)
             temp2=temp2->next;
         }
         temp2->next=temp1;
-        
+        cout<<temp2->data;
         
     }
+    
    
    
     
@@ -43,8 +45,8 @@ void Print()
     Node*temp3=head;
     if(temp3!=NULL)
     {
-        cout<<1;
-        cout<<temp3->data;
+        //cout<<1;
+        //cout<<temp3->data;
         temp3=temp3->next;
     }
     //cout<<temp3->data;
