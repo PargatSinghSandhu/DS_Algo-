@@ -17,16 +17,19 @@ void Insert(int x)
     temp1->next=NULL;
     if(head==NULL)
     {
+     
         head=temp1;
+        
     }    
     else if(head!=NULL)
     {
         Node*temp2=head;
-        while(temp2!=NULL)
+        while(temp2->next!=NULL)
         {
             temp2=temp2->next;
         }
         temp2->next=temp1;
+        
         
     }
    
@@ -40,10 +43,11 @@ void Print()
     Node*temp3=head;
     if(temp3!=NULL)
     {
+        cout<<1;
         cout<<temp3->data;
         temp3=temp3->next;
     }
-    cout<<temp3->data;
+    //cout<<temp3->data;
     
 }
 int main()
@@ -59,6 +63,9 @@ int main()
         cin>>x;
         Insert(x);
         Print();
+        
     }
+    
+    
     
 }
