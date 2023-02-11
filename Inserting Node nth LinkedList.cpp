@@ -21,5 +21,5 @@ void Print()
 }
 int main()
 {
-    head=NULL;
+    head=NULL ;
 }
