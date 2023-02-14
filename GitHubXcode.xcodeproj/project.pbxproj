@@ -14,6 +14,7 @@
 		7B5947DE299C0AA9007466CB /* GitHubXcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5947DD299C0AA9007466CB /* GitHubXcodeTests.swift */; };
 		7B5947E8299C0AA9007466CB /* GitHubXcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5947E7299C0AA9007466CB /* GitHubXcodeUITests.swift */; };
 		7B5947EA299C0AA9007466CB /* GitHubXcodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5947E9299C0AA9007466CB /* GitHubXcodeUITestsLaunchTests.swift */; };
+		7B5947F7299C0C59007466CB /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5947F6299C0C59007466CB /* new.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7B5947E3299C0AA9007466CB /* GitHubXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5947E7299C0AA9007466CB /* GitHubXcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubXcodeUITests.swift; sourceTree = "<group>"; };
 		7B5947E9299C0AA9007466CB /* GitHubXcodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubXcodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B5947F6299C0C59007466CB /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				7B5947CC299C0AA7007466CB /* GitHubXcodeApp.swift */,
 				7B5947CE299C0AA7007466CB /* ContentView.swift */,
+				7B5947F6299C0C59007466CB /* new.swift */,
 				7B5947D0299C0AA9007466CB /* Assets.xcassets */,
 				7B5947D2299C0AA9007466CB /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5947F7299C0C59007466CB /* new.swift in Sources */,
 				7B5947CF299C0AA7007466CB /* ContentView.swift in Sources */,
 				7B5947CD299C0AA7007466CB /* GitHubXcodeApp.swift in Sources */,
 			);
