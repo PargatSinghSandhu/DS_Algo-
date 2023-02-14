@@ -7,6 +7,11 @@ struct Node
 }
 struct Node*head;
 
+
+
+
+
+
 void reverse()
 {
     struct Node* current, *prev, *next;
@@ -14,6 +19,8 @@ void reverse()
     prev=NULL;
     while(currnt!=NULL)
     {
+        
+        
         next=current->next;
         current->next=prev;
         prev=current;
