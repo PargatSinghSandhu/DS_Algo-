@@ -8,12 +8,16 @@
 
 /* Begin PBXFileReference section */
 		7B594800299C167B007466CB /* Reverse_LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reverse_LinkedList.cpp; sourceTree = "<group>"; };
+		7B6C2E56299C22960098F236 /* Reverse_LinkedList_Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reverse_LinkedList_Recursion.cpp; sourceTree = "<group>"; };
+		7B6C2E57299C2D800098F236 /* Print_LinkedList_Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Print_LinkedList_Recursion.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		7B5947F8299C1614007466CB = {
 			isa = PBXGroup;
 			children = (
+				7B6C2E57299C2D800098F236 /* Print_LinkedList_Recursion.cpp */,
+				7B6C2E56299C22960098F236 /* Reverse_LinkedList_Recursion.cpp */,
 				7B594800299C167B007466CB /* Reverse_LinkedList.cpp */,
 			);
 			sourceTree = "<group>";
