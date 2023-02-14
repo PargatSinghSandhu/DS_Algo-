@@ -18,5 +18,6 @@ void reverse()
         current->next=prev;
         prev=current;
         current=next;
+        
     }
 }

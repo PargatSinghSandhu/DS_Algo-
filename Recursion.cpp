@@ -16,7 +16,9 @@ void fun1(int n)
 
 int main()
 {
-    int x=3;
+    
+    
+    int x=4;
     fun1(x);
     return 0;
 }
