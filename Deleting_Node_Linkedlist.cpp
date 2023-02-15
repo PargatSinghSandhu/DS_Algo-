@@ -18,6 +18,30 @@ struct Node
 
 struct Node*head;
 
+void Insert(int data, int n)
+{
+    struct Node*temp1= new Node;
+    temp1->data = data;
+    temp1->next= NULL;
+    
+    if(n==1)
+    {
+        temp1->next=head;
+        head=temp1;
+        return;
+    }
+    struct Node*temp2 = head ;
+    for(int i = 0 ; i<n-2;i++)
+    {
+        temp2=temp2->next;
+    }
+    
+    temp1->next=temp2->next;
+    temp2->next=temp1;
+    
+    
+}
+
 void Delete(int n)
 {
     struct Node*temp1=head;
@@ -33,8 +57,28 @@ void Delete(int n)
     
     
 }
+void Print(struct Node*p)
+{
+    if(p==NULL)
+    {
+        return;
+    }
+    
+    cout<<p->data;
+    Print(p->next);
+    
+    
+}
+
 
 int main()
 {
-    head=NULL;
+    head = NULL;
+    Insert(2,1);
+    Insert(4,2);
+    Insert(1,3);
+    Insert(5,4);
+    Delete(3);
+    Print(head);
+    
 }
