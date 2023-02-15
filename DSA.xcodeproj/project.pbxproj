@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B6C2E69299D46780098F236 /* Inserting_Node_Begining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C2E68299D46780098F236 /* Inserting_Node_Begining.cpp */; };
+		7B6C2E69299D46780098F236 /* Inserting_Node_nthpostion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 		7B6C2E57299C2D800098F236 /* Print_LinkedList_Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Print_LinkedList_Recursion.cpp; sourceTree = "<group>"; };
 		7B6C2E58299C38480098F236 /* Reverse_LinkedList_Rescursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Reverse_LinkedList_Rescursion.cpp; sourceTree = "<group>"; };
 		7B6C2E5D299C3A5A0098F236 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B6C2E68299D46780098F236 /* Inserting_Node_Begining.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inserting_Node_Begining.cpp; sourceTree = "<group>"; };
+		7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inserting_Node_nthpostion.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		7B5947F8299C1614007466CB = {
 			isa = PBXGroup;
 			children = (
-				7B6C2E68299D46780098F236 /* Inserting_Node_Begining.cpp */,
+				7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */,
 				7B6C2E58299C38480098F236 /* Reverse_LinkedList_Rescursion.cpp */,
 				7B6C2E57299C2D800098F236 /* Print_LinkedList_Recursion.cpp */,
 				7B6C2E56299C22960098F236 /* Reverse_LinkedList_Recursion.cpp */,
@@ -119,7 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B6C2E69299D46780098F236 /* Inserting_Node_Begining.cpp in Sources */,
+				7B6C2E69299D46780098F236 /* Inserting_Node_nthpostion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
