@@ -59,12 +59,14 @@ void Print(struct Node*p)
 }
 
 
+
+
 int main()
 {
     head = NULL;
     Insert(2,1);
-    Insert(3,2);
-    Insert(4,1);
+    Insert(4,2);
+    Insert(1,1);
     Insert(5,2);
     Print(head);
     
