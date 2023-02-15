@@ -13,19 +13,59 @@ using namespace std;
 struct Node
 {
     int data;
-    Struct Node*next;
+    struct Node*next;
 };
 
-
-
-void Print (struct Node*Node p)
+struct Node*Insert(Node* head, int data)
 {
-    if(p==NULL)
+    Node*temp = new Node;
+    temp->data = data;
+    temp->next=NULL;
+    if(head==NULL)
     {
-        return;
+        head = temp;
     }
+    else
+    {
+        Node*temp1=head;
+        while(temp1->next!=NULL)
+        {
+            temp1=temp1->next;
+            
+        }
+        temp1->next=temp;
+    }
+    return head;
+}
+
+
+
+void Reverse (struct Node* p)
+{
+    if(p->next==NULL)
+    {
+        head=p;
+        return;
+
+    }
+    Reverse(p->next);
+    Struct Node*q = p->next;
+    q->next=p;
+    p->next=NULL;
     
-    cout<<p->data;
-    Print(p->next);
     
 }
+
+
+
+int main()
+{
+    struct Node*head=NULL;
+    head = Insert(head,2);
+    head = Insert(head,3);
+    head = Insert(head,15);
+    head = Insert(head,80);
+    head = Insert(head,13);
+    Reverse(head);
+}
+
