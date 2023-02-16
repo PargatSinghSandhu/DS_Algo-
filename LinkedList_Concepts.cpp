@@ -44,6 +44,16 @@ void Linkedlist_Implement()             //
     
 }
 
+void Node_beginning(int x)
+{
+    struct Node*temp = new Node;
+    temp->data=x;
+    temp->next=head;
+    head=temp;
+    
+    
+}
+
 void Print(struct Node*p)
 {
     if(p==NULL)
@@ -57,6 +67,10 @@ void Print(struct Node*p)
 
 int main()
 {
-    Linkedlist_Implement();
+    Node_beginning(2);
+    Node_beginning(3);
+    Node_beginning(4);
+    //Linkedlist_Implement();
     Print(head);
+    
 }
