@@ -10,50 +10,53 @@
 
 using namespace std;
 
-struct ListNode
+struct Node
 {
     int data;
-    struct ListNode*next;
+    struct Node*next;
 };
 
-struct ListNode*head=NULL;
+struct Node*head=NULL;
 
 void Linkedlist_Implement()             //
 {
-    struct ListNode*temp = new ListNode;
+    struct Node*temp = new Node;
     
     temp->data=2;
     temp->next=NULL;
     head=temp;
     
-    struct ListNode*temp  = new ListNode;
-    temp->data = 3;
-    temp->next = NULL;
     
-    ListNode*temp1=head;
+    struct Node*temp2  = new Node;
+    temp2->data = 3;
+    temp2->next = NULL;
     
-    while(temp!=NULL)
+    Node*temp1=head;
+    
+    while(temp1->next!=NULL)
     {
         temp1=temp1->next;
+        
     }
-    temp1->next=temp;
+    
+    temp1->next=temp2;
     
     
 }
 
-void Print(struct ListNode*head)
+void Print(struct Node*p)
 {
-    if(head==NULL)
+    if(p==NULL)
     {
         return;
     }
-    cout<<head->data;
-    Print(head->next);
+    cout<<p->data;
+    Print(p->next);
 }
 
 
 int main()
 {
     Linkedlist_Implement();
-    Print();
+    Print(head);
 }
