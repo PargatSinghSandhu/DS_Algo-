@@ -54,6 +54,30 @@ void Node_beginning(int x)
     
 }
 
+void nthposition(int data, int n)
+{
+    
+    
+    
+    struct Node*temp = new Node;
+    
+    temp->data = data;
+    temp->next=NULL;
+    
+    Node*temp1=head;
+    
+    for(int i=0;i<n-2;i++)
+    {
+        temp1=temp1->next;
+    }
+    temp->next=temp1->next;
+    temp1->next=temp;
+    
+    
+    
+    
+}
+
 void Print(struct Node*p)
 {
     if(p==NULL)
@@ -71,6 +95,8 @@ int main()
     Node_beginning(3);
     Node_beginning(4);
     //Linkedlist_Implement();
+    nthposition(10,2);
+    
     Print(head);
     
 }
