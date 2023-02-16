@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B6C2E69299D46780098F236 /* Inserting_Node_nthpostion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */; };
 		7B6C2E6B299D8B6C0098F236 /* Deleting_Node_Linkedlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C2E6A299D8B6C0098F236 /* Deleting_Node_Linkedlist.cpp */; };
+		7B6C2E6D299EA60B0098F236 /* LinkedList_Concepts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B6C2E6C299EA60B0098F236 /* LinkedList_Concepts.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		7B6C2E5D299C3A5A0098F236 /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inserting_Node_nthpostion.cpp; sourceTree = "<group>"; };
 		7B6C2E6A299D8B6C0098F236 /* Deleting_Node_Linkedlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deleting_Node_Linkedlist.cpp; sourceTree = "<group>"; };
+		7B6C2E6C299EA60B0098F236 /* LinkedList_Concepts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList_Concepts.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		7B5947F8299C1614007466CB = {
 			isa = PBXGroup;
 			children = (
+				7B6C2E6C299EA60B0098F236 /* LinkedList_Concepts.cpp */,
 				7B6C2E6A299D8B6C0098F236 /* Deleting_Node_Linkedlist.cpp */,
 				7B6C2E68299D46780098F236 /* Inserting_Node_nthpostion.cpp */,
 				7B6C2E58299C38480098F236 /* Reverse_LinkedList_Rescursion.cpp */,
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6C2E6B299D8B6C0098F236 /* Deleting_Node_Linkedlist.cpp in Sources */,
+				7B6C2E6D299EA60B0098F236 /* LinkedList_Concepts.cpp in Sources */,
 				7B6C2E69299D46780098F236 /* Inserting_Node_nthpostion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
