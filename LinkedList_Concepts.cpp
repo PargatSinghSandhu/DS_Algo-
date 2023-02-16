@@ -63,7 +63,12 @@ void nthposition(int data, int n)
     
     temp->data = data;
     temp->next=NULL;
-    
+    if(n==1)
+    {
+        temp->next=head;
+        head=temp;
+        return;
+    }
     Node*temp1=head;
     
     for(int i=0;i<n-2;i++)
@@ -95,7 +100,7 @@ int main()
     Node_beginning(3);
     Node_beginning(4);
     //Linkedlist_Implement();
-    nthposition(10,2);
+    nthposition(10,1);
     
     Print(head);
     
