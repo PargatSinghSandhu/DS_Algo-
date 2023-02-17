@@ -83,6 +83,21 @@ void nthposition(int data, int n)
     
 }
 
+void delnth(int n)
+{
+    
+    struct Node*temp = head;
+    for(int i=0;i<n-2;i++)
+    {
+        temp=temp->next;
+    }
+    struct Node*temp1 = temp->next;
+    temp->next=temp1->next;
+    free(temp1);
+    
+    
+}
+
 void Print(struct Node*p)
 {
     if(p==NULL)
@@ -101,6 +116,7 @@ int main()
     Node_beginning(4);
     //Linkedlist_Implement();
     nthposition(10,1);
+    delnth(3);
     
     Print(head);
     
