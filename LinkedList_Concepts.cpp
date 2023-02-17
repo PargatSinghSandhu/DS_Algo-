@@ -108,6 +108,23 @@ void Print(struct Node*p)
     Print(p->next);
 }
 
+void reverse()
+{
+    struct Node *temp, *prev,*next;
+    temp = head;
+    prev=NULL;
+    
+    while(temp!=NULL)
+    {
+        next=temp->next;
+        temp->next=prev;
+        prev=temp;
+        temp=next;
+        
+    }
+    head=prev;
+}
+
 
 int main()
 {
@@ -115,8 +132,9 @@ int main()
     Node_beginning(3);
     Node_beginning(4);
     //Linkedlist_Implement();
-    nthposition(10,1);
-    delnth(3);
+    //nthposition(10,1);
+    //delnth(3);
+    reverse();
     
     Print(head);
     
