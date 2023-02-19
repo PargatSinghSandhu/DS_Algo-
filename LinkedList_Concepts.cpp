@@ -56,7 +56,7 @@ void Node_beginning(int x)
 
 
 
-void nthposition(int data, int n)
+void nthposition(int data,  int n)
 {
     
     
