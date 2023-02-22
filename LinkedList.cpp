@@ -66,7 +66,7 @@ void sum(struct Node*p2)                                        //sum of element
 
 int main()
 {
-    int arr[]={4,2,6,9,3};
+    int arr[]={4,2,6,9,3 };
     
     create(arr,5);
     
