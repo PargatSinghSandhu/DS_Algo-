@@ -11,7 +11,7 @@ struct Node
 void create(int arr[], int n)
 {
     int i;
-    struct Node *t, *last;                                                             //*t = this will help in creating new node *last = this will help in adding new node
+    struct Node *t, *last;                                                              //*t = this will help in creating new node *last = this will help in adding new node
     first= new Node;
     first->data = arr[0];                                                             /* data is inserting in data and node's next is pointed to NULL and last variable is set as last */ 
     first->next=NULL;
