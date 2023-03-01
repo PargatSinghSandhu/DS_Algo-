@@ -20,13 +20,14 @@ struct Node
 
 struct Node*head;
 
-struct Node*GetNewNode(int x)
+struct Node*getNewNode(int x)
 {
     struct Node* newNode = new Node;
     
     newNode->data=x;
     newNode->next=NULL;
     newNode->prev=NULL;
+    return newNode;
 }
 
 void Insert(int x)
@@ -56,7 +57,7 @@ void print(struct Node*p)
         return;
     }
     cout<<p->data;
-    Print(p->next);
+    print(p->next);
     
 }
 
