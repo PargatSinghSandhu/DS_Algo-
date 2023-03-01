@@ -49,6 +49,29 @@ void Insert(int x)
     
 }
 
+void ReversePrint(struct Node *p)
+{
+    
+    if(p==NULL)
+    {
+        return;
+    }
+    while(p->next!=NULL)
+    {
+        p=p->next;
+    }
+
+    cout<<"Reversed LinkedList";
+    
+    while(p!=NULL)
+    {
+              cout<<p->data;
+              p=p->prev;
+     }
+    
+    
+}
+
 void print(struct Node*p)
 {
     
@@ -66,5 +89,17 @@ int main()
     Insert(2);
     Insert(3);
     print(head);
+    ReversePrint(head);
+    
 }
+
+
+
+
+
+
+
+
+
+
 
