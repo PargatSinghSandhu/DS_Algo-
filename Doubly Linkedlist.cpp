@@ -62,5 +62,8 @@ void print(struct Node*p)
 
 int main()
 {
+    Insert(2);
+    Insert(3);
     print(head);
 }
+
