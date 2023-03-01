@@ -48,7 +48,19 @@ void Insert(int x)
     
 }
 
-int main()
+void print(struct Node*p)
 {
     
+    if(p==NULL)
+    {
+        return;
+    }
+    cout<<p->data;
+    Print(p->next);
+    
+}
+
+int main()
+{
+    print(head);
 }
