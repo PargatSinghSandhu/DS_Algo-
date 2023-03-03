@@ -24,6 +24,20 @@ void Push_beg(int x)
     
 }
 
+
+void Pop_beg()
+{
+    struct Node*temp=head;
+    if(head==NULL)
+    {
+        return;
+    }
+    head=temp->next;
+    free(temp);
+    
+    
+}
+
 void Node_beginning(int x)
 {
     
@@ -40,7 +54,7 @@ void Print(struct Node*p)
     if(p==NULL)
     {
        
-       return; 
+       return;
     }
     cout<<p->data;
     Print(p->next);
@@ -53,6 +67,7 @@ int main()
     //Node_beginning(12);
     Push_beg(10);
     Push_beg(11);
+    Pop_beg();
     Print(head);
     //Push_beg(1);
     //Push_beg(2);
