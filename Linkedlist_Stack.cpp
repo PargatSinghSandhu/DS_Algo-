@@ -15,14 +15,14 @@ struct Node
     int data;
     struct Node*next;
     
-}
+};
 struct Node*top;
 struct Node*head=NULL;
 
 void Push_beg(int x)
 {
-    struct*temp = new Node;
-    
+    struct Node*temp = new Node;
+    top=head;
     if(top==NULL)
     {
         return;
@@ -34,13 +34,34 @@ void Push_beg(int x)
 
 }
 
+void Node_beginning(int x)
+{
+    struct Node*temp = new Node;
+    temp->data=x;
+    temp->next=head;
+    head=temp;
+    
+    
+}
 
+void print(struct *p)
+{
+    if(head==NULL)
+    {
+       return; 
+    }
+    cout<<p->data;
+    print(p->next);
+}
 
 int main()
 {
-    Push_beg(5);
-    Push_beg(3);
-    Push_beg(1);
-    Push_beg(2);
+    Node_beginning(3);
+    Node_beginning(2);
+    Push_beg(10);
+    Push_beg(11);
+    print(head);
+    //Push_beg(1);
+    //Push_beg(2);
     
 }
