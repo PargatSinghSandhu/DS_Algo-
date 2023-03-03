@@ -62,7 +62,7 @@ void Print(struct Node*p)
 
 int main()
 {
-    Node_beginning(3);
+    Node_beginning(31);
     Node_beginning(2);
     //Node_beginning(12);
     Push_beg(10);
