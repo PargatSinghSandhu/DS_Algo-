@@ -16,3 +16,31 @@ struct Node
     struct Node*next;
     
 }
+struct Node*top;
+struct Node*head=NULL;
+
+void Push_beg(int x)
+{
+    struct*temp = new Node;
+    
+    if(top==NULL)
+    {
+        return;
+    }
+    temp->data=x;
+    temp->next=top;
+    temp=top;
+    
+
+}
+
+
+
+int main()
+{
+    Push_beg(5);
+    Push_beg(3);
+    Push_beg(1);
+    Push_beg(2);
+    
+}
