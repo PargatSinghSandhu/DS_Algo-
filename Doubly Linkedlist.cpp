@@ -5,8 +5,8 @@
 //  Created by Pargat Singh on 3/1/23.
 //
 
-#include <stdio.h>
-#include <iostream>
+#include  <stdio.h>
+#include  <iostream>
 
 using namespace  std;
 
