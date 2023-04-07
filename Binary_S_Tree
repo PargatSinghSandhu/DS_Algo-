@@ -1,0 +1,15 @@
+#include<iostream>
+
+using namespace std;
+
+struct BstNode
+{
+    int data;
+    BstNode* right;
+    BstNode* left;
+};
+
+int main()
+{
+    BstNode*root=NULL;
+}
