@@ -18,7 +18,14 @@ BstNode GetnewNode(int data1)
     return newNode;
 }
 
-
+BstNode* Insert ( BstNode* root, int data)
+{
+    if(root==NULL)
+    {
+        root=GetnewNode(data);
+        retrun root;
+    }
+}
 
 int main()
 {
