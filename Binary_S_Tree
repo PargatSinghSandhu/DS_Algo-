@@ -9,7 +9,20 @@ struct BstNode
     BstNode* left;
 };
 
+
+BstNode GetnewNode(int data1)
+{
+    BstNode* newNode = new BstNode();
+    newNode->data = data1;
+    newNode->left=newNode->right=NULL;
+    return newNode;
+}
+
+
+
 int main()
 {
     BstNode*root=NULL;
 }
+
+
