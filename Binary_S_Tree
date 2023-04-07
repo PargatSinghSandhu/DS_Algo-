@@ -23,7 +23,12 @@ BstNode* Insert ( BstNode* root, int data)
     if(root==NULL)
     {
         root=GetnewNode(data);
-        retrun root;
+        return root;
+    }
+    else if(data<=root->data)
+    {
+        root->left=Insert(root->left, data);
+        
     }
 }
 
