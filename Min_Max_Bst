@@ -9,7 +9,7 @@ struct BstNode
     BstNode* right;
 };
 
-int Find_Min_Max(BstNode*root)
+int Find_Min(BstNode*root)
 {
     if(root==NULL)
     {
@@ -21,4 +21,24 @@ int Find_Min_Max(BstNode*root)
         root=root->left;
     }
     return root->data;
+}
+
+int Find_Max(BstNode*root)
+{
+    if(root==NULL)
+    {
+        cout<<"Bst is empty";
+        return 0;
+    }
+    while(root->right!=NULL)
+    {
+        root=root->right;
+    }
+    return root->data;
+}
+
+int main()
+{
+    Find_Min(BstNode*root);
+    Find_Max(BstNode*root);
 }
