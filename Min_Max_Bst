@@ -1,0 +1,24 @@
+#include<iostream>
+
+using namespace std;
+
+struct BstNode
+{
+    int data;
+    BstNode* left;
+    BstNode* right;
+};
+
+int Find_Min_Max(BstNode*root)
+{
+    if(root==NULL)
+    {
+        cout<<"Bst is empty";
+        return 0;
+    }
+    while(root->left!=NULL)
+    {
+        root=root->left;
+    }
+    return root->data;
+}
