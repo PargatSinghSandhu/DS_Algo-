@@ -27,5 +27,6 @@ void LevelOrder(Node*root)
         {
             Q.push(current->right==NULL);
         }
+        Q.pop();
     }
 }
