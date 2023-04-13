@@ -33,6 +33,20 @@ bool IsSubtreelesser(Node*root, int value)
         return false;
 }
 
+IsSubtreegreater(Node*root, int data)
+{
+    if(root==NULL)
+    {
+        return NULL;
+    }
+    if((root->data<=value)&&IsSubtreegreater(root->right, value)&& IsSubtreegreater(root->left, value))
+    {
+        return true;
+    }
+    else:
+        return false;
+}
+
 int main()
 {
     
