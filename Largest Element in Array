@@ -23,5 +23,5 @@ int main()
 {
     int arr[6]={1,0,2,10,2};
     
-    LargestElement(arr, 6);
+    cout<<LargestElement(arr, 6);
 }
