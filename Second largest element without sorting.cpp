@@ -1,20 +1,39 @@
+#include<iostream>
+using namespace std;
 
-
-
-
-int largest = a[0];
-int slargest = -1;
-
-for (int i=0; i<n;i++)
+int LargestElement(int arr[], int n)
 {
-    if(a[i]>largest)
+    int largest = arr[0];
+    
+    for(int i=0;i<n;i++)
+    {
+        if(largest<arr[i])
+        {
+            largest = arr[i];
+        }
+    }
+    
+    return largest;
+}
+
+int SLargestElement(int arr[], int n)
+{
+    int largest = arr[0];
+    int slargest = 0;
+    for(int i=0;i<n;i++)
     {
         slargest = largest;
         largest = a[i];
     }
-    else if( a[i]<largest && a[i]>slargest)
-    {
-        slargest = a[i];
-    }
 }
-return slargest;
+
+
+
+int main()
+{
+    int arr[6]={1,0,2,10,2};
+    
+    //cout<<LargestElement(arr, 6);
+    
+    cout<<"Second Largest"<<SlargestElement(arr, 6);
+}
