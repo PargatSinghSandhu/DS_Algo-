@@ -25,7 +25,7 @@ bool IsSubtreelesser(Node*root, int value)
     {
         return true;
     }
-    if((root->data<=value) && IsSubtreelesser(root->left, value) && IsSubtreelesser(root->right, value))
+    if((root->data<=value) &&  IsSubtreelesser(root->left, value) && IsSubtreelesser(root->right, value))
     {
         return true;
     }
