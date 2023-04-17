@@ -2,24 +2,26 @@
 
 using namespace std;
 
-void left_rotate_one(int arr[], int n)
-
+void rotate(int arr[ ], int k)
 {
-    int temp = arr[0];
-    for(int i=1;i<n;i++)
+    
+     for(int i=k;i<6;i++)
+      {
+        
+        arr[i-k]=arr[i];
+        
+      }
+    
+    for(int j=0;j<6;j++)
     {
-        arr[i-1]=arr[i];
+        cout<<arr[j];
     }
-    arr[n-1]=temp;
-    for(int j=0;j<n;j++)
-    {
-        cout<<arr[j]<<" ";
-    }
+   
 }
 
 int main()
 {
-    int arr[6]={1,2,10,23,4,12};
-    left_rotate_one(arr,6);
+    int arr[6]={1,2,3,4,5,6};
+    rotate(arr, 3);
     
 }
