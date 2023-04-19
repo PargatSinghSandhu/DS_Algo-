@@ -13,9 +13,9 @@ void rotate(int arr[ ], int k, int n)
         
       }
     for(int t=0;t<n;t++)
-    {
+     {
         arr[(n-k)+t] = temp[t];
-    }
+     }
     
     for(int j=0;j<n;j++)
     {
