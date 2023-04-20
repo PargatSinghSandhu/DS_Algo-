@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void rotate(int arr[ ], int k, int n)
+void rotate(int arr[], int k, int n)
 {
     int temp[3]={1,2,3};
     
