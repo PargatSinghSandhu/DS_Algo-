@@ -1,27 +1,36 @@
 #include<iostream>
+#include<vector>
 
 using namespace std;
 
-void rotate(int arr[ ], int k)
+
+void Move_zeroes_end(int arr[], int n)
 {
-    
-     for(int i=k;i<6;i++)
-      {
-        
-        arr[i-k]=arr[i];
-        
-      }
-    
-    for(int j=0;j<6;j++)
+    vector <int> temp;
+    for (int i=0;i<n;i++)
     {
-        cout<<arr[j];
+        if(arr[i]!=0)
+        {
+            temp.push_back(arr[i]);
+        }
     }
-   
+    
+    for(int j=0;j<temp.size();j++)
+     {
+         arr[j]=temp[j];
+     }
+    
+    for(int k=0;k<n;k++)
+    {
+        cout<<arr[k];
+    }
+    
+    
 }
 
-int main()
+
+int main ()
 {
-    int arr[6]={1,2,3,4,5,6};
-    rotate(arr, 3);
-    
+    int arr[] = {1,0,2,10,5,0,0,3};
+    Move_zeroes_end(arr, 8);
 }
