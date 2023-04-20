@@ -19,6 +19,11 @@ void Move_zeroes_end(int arr[], int n)
      {
          arr[j]=temp[j];
      }
+     
+     for(int p=temp.size();p<n;p++)
+     {
+         arr[p]=0;
+     }
     
     for(int k=0;k<n;k++)
     {
