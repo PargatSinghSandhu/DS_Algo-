@@ -2,20 +2,21 @@
 
 using namespace std;
 
-void rotate(int arr[], int k, int n)
+void rotate(int arr[ ], int k, int n)
 {
     int temp[3]={1,2,3};
     
      for(int i=k;i<n;i++)
       {
-        
+          
         arr[i-k]=arr[i];
         
       }
-    for(int t=0;t<n;t++)
-     {
-        arr[(n-k)+t] = temp[t];
-     }
+    for(int t=n-k;t<n;t++)
+    {
+        
+        arr[t]=temp[t-(n-k)];
+    }
     
     for(int j=0;j<n;j++)
     {
