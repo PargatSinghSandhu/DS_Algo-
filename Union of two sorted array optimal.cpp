@@ -11,10 +11,19 @@ union_two_array(int arr1[], int arr2[], int n1, int n2)
     {
         if(arr1[i]<=arr2[j])
         {
-            if(union_arr.back()!=arr[i])
+            if(union_arr.back()!=arr[i])||union_arr.size()==0)
             {
                 union_arr.push_back(arr[i]);
             }
+            i++;
+        }
+        else
+        {
+            if(union_arr.back()!=arr2[j])||union_arr.size()==0)
+            {
+                union_arr.push_back(arr2[j]);
+            }
+            j++;
         }
     }
 }
