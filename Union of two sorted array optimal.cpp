@@ -25,6 +25,20 @@ union_two_array(int arr1[], int arr2[], int n1, int n2)
             }
             j++;
         }
+        while (j<n2) {
+            if(union_arr.back()!=arr[j])||union_arr.size()==0)
+            {
+                union_arr.push_back(arr2[j]);
+            }
+        }
+            
+            {
+                if(union_arr.back()!=arr[i])||union_arr.size()==0)
+                {
+                while (i<n1) {
+                    union_arr.push_back(arr1[i]);
+                }
+            }
     }
 }
 
