@@ -31,7 +31,7 @@ union_two_array(int arr1[], int arr2[], int n1, int n2)
             }
             else if(j<n2)
             {
-                if(union_arr.size()==0||union_arr.push()!=arr2[j])
+                if(union_arr.size()==0||union_arr.push()!=arr2[j] )
                 {
                     union_arr.push_back(arr2[j]);
                 }
