@@ -1,15 +1,33 @@
 #include<iostream>
 using namespace std;
 
-void longest_subarray()
+void longest_subarray(int arr[], int n1, int k)
 {
+    int longest_sum = 0;
+    
     for( int i = 0;i<n1;i++)
     {
-        
+        for( int j=i; j<n1;j++)
+        {
+            for(int k=i;k<j;k++)
+            {
+                longest_sum = longest_sum + arr[i];
+                if(longest_sum==K)
+                {
+                    int len = max(len, i-j+1);
+                    break;
+                }
+                    
+            }
+        }
     }
 }
 
 int main()
 {
+    int k;
     int arr[] = {1,2,3,1,1,1,4,2,3};
+    cout<<"Enter the value of K: ";
+    cin>>k;
+    longest_subarray(arr, n1, k);
 }
