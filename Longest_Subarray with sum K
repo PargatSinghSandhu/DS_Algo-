@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace std;
+using namespace std ;
 
 void longest_subarray(int arr[], int n1, int k)
 {
