@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std ;
 
-void longest_subarray(int arr[], int n1, int k)
+void longest_subarray(int arr[], int n1, int  k)
 {
     int longest_sum = 0;
     
