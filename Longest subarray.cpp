@@ -2,7 +2,7 @@
 #include<algorithm>
 using namespace std;
 
-void longest_subarray(int arr[], int n1, int k)
+void longest_subarray(int arr[], int n1, int k )
 {
     int len=0;
     for(int i=0;i<n1;i++)
