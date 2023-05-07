@@ -10,7 +10,7 @@ void longest_subarray(int arr[], int n1, int k)
         for(int j=i;j<n1;j++)
         {   
             int sum=0;
-            for(int k=i;k<j;k++)
+            for(int k=i;k<j;k++ )
             {   
                 
                 sum=sum+arr[k];
