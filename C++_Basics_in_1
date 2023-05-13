@@ -9,3 +9,39 @@ int main()
     cout<<str;
     return 0;
 }
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+#include<string.h>//this is has most of the libraries 
+using namespace std;
+
+int main()
+{
+    string str;
+    char ans, answ;
+    //cout<<"Enter the word";
+    //getline(cin,str);
+    //cout<<str;
+    cout<<"Will you practice coding every day?";
+    cin>>ans;
+    cout<<"Are you sure?";
+    cin.ignore(1, '\n');
+    getline(cin, str);
+    //cin>>answ;
+    //cout<<str;
+    if(ans =='y' && str=="yes")
+    {
+        cout<<"You will get a job at Apple";
+        
+    }
+    else 
+    {
+        cout<<"You have to return back";
+    }
+    return 0;
+}
