@@ -9,7 +9,7 @@ void twoSum(vector<int>& nums, int target)
 {
  map<int, int> mymap;
  
- for( int i = 0;i<nums.size();i++)
+ for( int i = 0;i<nums.size();i++ )
  {
     int first = nums[i];
     int second = target - first;
