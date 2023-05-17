@@ -3,7 +3,7 @@
 #include<map>
 #include<vector> 
 
-using namespace std ;
+using namespace  std ;
 
 void twoSum(vector<int>& nums, int target)
 {
