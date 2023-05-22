@@ -4,37 +4,56 @@ using namespace std;
 
 int majority_element( int arr[6])
 {   
-    
-    for( int i=0;i<6;i++)
+    int count=0;
+    int element;
+
+    for( int i=0;i<17;i++)
     {
-        int c=0;
-        for(int j=0;j<6;j++)
+        
+
+        for(int i=0;i<17;i++)
         {
-            if(arr[i]==arr[j])
+                 
+            if(count==0)
             {
-                c++;
-                //cout<<c;
+                count=1;
+                element=arr[i];
             }
-            //cout<<c;
-            
+            if(arr[i]==element)
+            {
+                count++;
+            }
+            else 
+            {
+                count--;
+            }
         }
-        if(c>6/2)
+
+        
+    }
+    int count1;
+    for( int i=0;i<17;i++)
+    {   
+        if(element==arr[i])
         {
-            return arr[i]; 
+            count1++;
         }
         
     }
-  
-
-
+    if(element>(6/2))
+        {
+            return element; 
+        }
+    return -1;
 }
 
 
 
 int main ()
 {
-    int arr[6]={2,3,2,2,2,4};
+    int arr[17]={7,7,5,7,5,1,5,7,5,5,7,7,5,5,5,5,1};
 
     int res = majority_element(arr);
     cout<<res;
+    return 0;
 }
