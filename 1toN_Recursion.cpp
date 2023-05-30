@@ -8,7 +8,7 @@ void Print(int n)
     if(n==1)
     { 
         cout<<n;
-        return;
+        return ;
     }
     
     
