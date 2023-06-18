@@ -22,7 +22,7 @@ int heightBinary(TreeNode*root)
         return 0;
     }
 
-    int leftheight=heightBinary(root->left);
+    int leftheight=heightBinary(root->left); 
     
     int rightheight = heightBinary(root->right);
 
@@ -31,6 +31,7 @@ int heightBinary(TreeNode*root)
 
 
 }
+
 
 
 
