@@ -1,65 +1,68 @@
 
-int count = 0;
-int r =1;
-
-if(root==NULL)
-{
-    return NULL;
-}
-
-if(node->left!=NULL&&r==1)
-{
-  ans.push_back(node->val);
-}
-else if(node->right!=NULL)
-{
-  ans.push_back(node->val);
-}
-else if(node)
-
-
-boundary_traversal(node->left);
-ans.push_back(node->val);
-if(node->right!=NULL)
-{
-    ans.push_back(node->val)
-}
-
-
-if(node->left!=NULL && node->right==NULL)
-{
-    
-}
-
-if(node->right!=NULL && node->left == NULL)
-{
-    ans.push_back(node->val);
-}
-
-if(node->left==NULL && node->right==NULL && count == 2)
-{
-    c++;
-}
-
-if(node->right!=NULL && node-)
-
+ #include<vector>
+ #include<iostream>
+ #include<queue>
+ using namespace std;
  
+  struct TreeNode {
+      int val;
+     TreeNode *left;
+      TreeNode *right;
+      TreeNode() : val(0), left(nullptr), right(nullptr) {}
+      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ };
+ 
+  vector<vector<int>> zigzagLevelOrder(TreeNode* root)
+  {
+    vector<vector<int>> result;
+    if(root == NULL)
+    {
+        return result;
+    }
+
+    queue <TreeNode*> queue;
+    queue.push(root);
+    bool lefttoright = true;
+
+    while(!queue.empty())
+    {
+        int size=queue.size();
+        vector<int> row(size);
+
+        for(int i=0;i<size;i++)
+        {
+            TreeNode* node = queue.front();
+            queue.pop();
+
+            int index = (lefttoright)? i:(size-1-i);
+
+            row[index] = node->val;
+            if(node->left);
+                queue.push(node->val);
+            if(node->right)
+                queue.push(node->val);
+
+        }
+        lefttoright = !(lefttoright);
+        result.push_back(row);
+    }
+    return result;
 
 
-voif leftboundary(Node*root, vector<int> &res)
+  }
+
+
+int main()
 {
+    vector<int> ans;
+    TreeNode* root = new TreeNode(1);
+    root->left = new TreeNode(2);
+    root->right = new TreeNode(3);
+    root->right->left = new TreeNode (4);
+    root->right->right = new TreeNode(6);
+    root->right->left->left = new TreeNode (5);
+    vector op = zigzagLevelOrder(root);
     
-    Node*cur=root->left;
-
-    if(!isLeaf(cur))
-    {
-        res.push_back(cur->val);
-    }
-    if(cur->left)
-    {
-        cur = cur->left;
-    }
-    else
-        cur=cur->right;
-
+    return 0;
 }
