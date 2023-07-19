@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int arr[6]={3,4,5,3,4,6};
+    int arr[6]={3,4,5,3,4,6 };
     int *p;
     p=arr;
     cout<<"Value of array: ";
