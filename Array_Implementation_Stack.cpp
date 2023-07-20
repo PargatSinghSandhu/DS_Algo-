@@ -2,7 +2,7 @@
 
 #include<iostream>
 #define MAXSIZE 100
-using namespace std;
+using namespace  std;
 
 int A[MAXSIZE];
 
