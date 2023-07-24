@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    int arr[5]={1,2,3,4,5};         //array defined in stack 
+    int arr[5]={1, 2,3,4,5};         //array defined in stack 
     int *p, *q;                     //pointers will be used to define and access the array in heap.
     
     p = new int [5];                //array making in heap, through p, we can access the array in heap.
