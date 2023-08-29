@@ -7,7 +7,7 @@ struct BstNode
     int data;
     BstNode* right;
     BstNode* left;
-};
+ };
 
 
 BstNode GetnewNode(int data1)
